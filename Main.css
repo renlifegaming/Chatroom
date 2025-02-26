@@ -1,0 +1,23 @@
+.mainHeader {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 20px;
+    color: rgb(150, 150, 150);
+    font-size: 40px;
+}
+
+body {
+    background: linear-gradient(black, rgb(21, 21, 21) ,rgb(31, 31, 31));
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.postButton {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(95, 95, 95);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 70px;
+    size: 20;
+}

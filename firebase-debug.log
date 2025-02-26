@@ -1,0 +1,260 @@
+[debug] [2025-02-26T03:36:21.816Z] ----------------------------------------------------------------------
+[debug] [2025-02-26T03:36:21.818Z] Command:       /Users/danielvigo/.nvm/versions/node/v22.14.0/bin/node /Users/danielvigo/.nvm/versions/node/v22.14.0/bin/firebase init
+[debug] [2025-02-26T03:36:21.819Z] CLI Version:   13.31.2
+[debug] [2025-02-26T03:36:21.819Z] Platform:      darwin
+[debug] [2025-02-26T03:36:21.819Z] Node Version:  v22.14.0
+[debug] [2025-02-26T03:36:21.819Z] Time:          Tue Feb 25 2025 21:36:21 GMT-0600 (Central Standard Time)
+[debug] [2025-02-26T03:36:21.819Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-26T03:36:21.824Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-26T03:36:21.824Z] > authorizing via signed-in user (danenrvig@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/danielvigo/VScode/Projects/PostText
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-02-26T03:37:45.794Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:37:45.794Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:37:45.795Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-02-26T03:37:46.244Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-02-26T03:37:46.244Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project js-html-css-chatroom (JS-HTML-CSS-Chatroom) 
+[info] 
+=== Dataconnect Setup
+[debug] [2025-02-26T03:37:51.422Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:37:51.422Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:37:51.423Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/js-html-css-chatroom/billingInfo [none]
+[debug] [2025-02-26T03:37:51.704Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/js-html-css-chatroom/billingInfo 200
+[debug] [2025-02-26T03:37:51.705Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/js-html-css-chatroom/billingInfo {"name":"projects/js-html-css-chatroom/billingInfo","projectId":"js-html-css-chatroom","billingAccountName":"","billingEnabled":false}
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2025-02-26T03:37:51.705Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:37:51.706Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:37:51.706Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/sqladmin.googleapis.com [none]
+[debug] [2025-02-26T03:37:51.706Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/sqladmin.googleapis.com x-goog-quota-user=projects/js-html-css-chatroom
+[debug] [2025-02-26T03:37:52.066Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/sqladmin.googleapis.com 200
+[debug] [2025-02-26T03:37:52.066Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/sqladmin.googleapis.com [omitted]
+[warn] ⚠  dataconnect: missing required API sqladmin.googleapis.com. Enabling now... 
+[debug] [2025-02-26T03:37:52.067Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:37:52.067Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:37:52.067Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/sqladmin.googleapis.com:enable [none]
+[debug] [2025-02-26T03:37:52.067Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/sqladmin.googleapis.com:enable x-goog-quota-user=projects/js-html-css-chatroom
+[debug] [2025-02-26T03:37:52.421Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/sqladmin.googleapis.com:enable 200
+[debug] [2025-02-26T03:37:52.421Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/sqladmin.googleapis.com:enable [omitted]
+[debug] [2025-02-26T03:38:02.422Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:38:02.423Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:38:02.423Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/sqladmin.googleapis.com [none]
+[debug] [2025-02-26T03:38:02.423Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/sqladmin.googleapis.com x-goog-quota-user=projects/js-html-css-chatroom
+[debug] [2025-02-26T03:38:02.986Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/sqladmin.googleapis.com 200
+[debug] [2025-02-26T03:38:02.986Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/sqladmin.googleapis.com [omitted]
+[info] ✔  dataconnect: required API sqladmin.googleapis.com is enabled 
+[info] ✔  Wrote dataconnect/dataconnect.yaml 
+[info] ✔  Wrote dataconnect/schema/schema.gql 
+[info] ✔  Wrote dataconnect/connector/connector.yaml 
+[info] ✔  Wrote dataconnect/connector/queries.gql 
+[info] ✔  Wrote dataconnect/connector/mutations.gql 
+[info] ✔  Detected WEB app in directory /Users/danielvigo/VScode/Projects/PostText 
+[info] i  Wrote new config to /Users/danielvigo/VScode/Projects/PostText/dataconnect/connector/connector.yaml 
+[info] i  dataconnect: downloading dataconnect-emulator-1.8.2... {"metadata":{"emulator":{"name":"dataconnect"},"message":"downloading dataconnect-emulator-1.8.2..."}}
+[debug] [2025-02-26T03:38:38.985Z] >>> [apiv2][query] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-macos-v1.8.2 
+[debug] [2025-02-26T03:38:39.210Z] <<< [apiv2][status] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-macos-v1.8.2 200
+[debug] [2025-02-26T03:38:39.210Z] <<< [apiv2][body] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-macos-v1.8.2 [stream]
+[info] I0225 21:38:42.411277   85024 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "/Users/danielvigo/VScode/Projects/PostText/dataconnect-generated/js/default-connector"
+I0225 21:38:42.412879   85024 generate.go:40] Generated all sources. Writing them to disk...
+I0225 21:38:42.414030   85024 collector.go:107] connector "default" javascriptSdk wrote into "/Users/danielvigo/VScode/Projects/PostText/dataconnect-generated/js/default-connector"
+Generated sources: index.d.ts [259B] esm/index.esm.js [167B] esm/package.json [17B] index.cjs.js [208B] package.json [634B] README.md [2740B] 
+I0225 21:38:42.414641   85024 installsdk.go:33] Unable to find package.json. Skipping automatic installation of @firebasegen/default-connector
+
+[info] i  Generated SDK code for default 
+[info] ✔  If you'd like to add more generated SDKs to your app your later, run firebase init dataconnect:sdk again 
+[info] i  If you'd like to provision a CloudSQL Postgres instance on the Firebase Data Connect no-cost trial:
+1. Please upgrade to the pay-as-you-go (Blaze) billing plan. Visit the following page:
+     https://console.firebase.google.com/project/js-html-css-chatroom/usage/details
+2. Run firebase init dataconnect again to configure the Cloud SQL instance.
+3. Run firebase deploy --only dataconnect to deploy your Data Connect service. 
+[info] 
+=== Firestore Setup
+[debug] [2025-02-26T03:38:42.417Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:38:42.417Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:38:42.417Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/firestore.googleapis.com [none]
+[debug] [2025-02-26T03:38:42.417Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/firestore.googleapis.com x-goog-quota-user=projects/js-html-css-chatroom
+[debug] [2025-02-26T03:38:42.718Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/firestore.googleapis.com 200
+[debug] [2025-02-26T03:38:42.718Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/firestore.googleapis.com [omitted]
+[debug] [2025-02-26T03:38:42.719Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:38:42.719Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:38:42.719Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/js-html-css-chatroom/databases/(default) [none]
+[debug] [2025-02-26T03:38:43.002Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/js-html-css-chatroom/databases/(default) 404
+[debug] [2025-02-26T03:38:43.002Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/js-html-css-chatroom/databases/(default) {"error":{"code":404,"message":"Project 'js-html-css-chatroom' or database '(default)' does not exist.","status":"NOT_FOUND"}}
+[debug] [2025-02-26T03:38:43.003Z] error getting database type:  Request to https://firestore.googleapis.com/v1/projects/js-html-css-chatroom/databases/(default) had HTTP Error: 404, Project 'js-html-css-chatroom' or database '(default)' does not exist. {"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":404,"message":"Project 'js-html-css-chatroom' or database '(default)' does not exist.","status":"NOT_FOUND"}},"response":{"statusCode":404}},"exit":1,"message":"Request to https://firestore.googleapis.com/v1/projects/js-html-css-chatroom/databases/(default) had HTTP Error: 404, Project 'js-html-css-chatroom' or database '(default)' does not exist.","status":404}
+[info] (default) does not exist in project js-html-css-chatroom.
+[debug] [2025-02-26T03:38:43.003Z] database_type: DATABASE_DOES_NOT_EXIST
+[debug] [2025-02-26T03:39:24.007Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:39:24.007Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:39:24.007Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/js-html-css-chatroom/databases/Chatlogs [none]
+[debug] [2025-02-26T03:39:24.231Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/js-html-css-chatroom/databases/Chatlogs 404
+[debug] [2025-02-26T03:39:24.231Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/js-html-css-chatroom/databases/Chatlogs {"error":{"code":404,"message":"Project 'js-html-css-chatroom' or database 'Chatlogs' does not exist.","status":"NOT_FOUND"}}
+[debug] [2025-02-26T03:39:24.231Z] error getting database type:  Request to https://firestore.googleapis.com/v1/projects/js-html-css-chatroom/databases/Chatlogs had HTTP Error: 404, Project 'js-html-css-chatroom' or database 'Chatlogs' does not exist. {"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":404,"message":"Project 'js-html-css-chatroom' or database 'Chatlogs' does not exist.","status":"NOT_FOUND"}},"response":{"statusCode":404}},"exit":1,"message":"Request to https://firestore.googleapis.com/v1/projects/js-html-css-chatroom/databases/Chatlogs had HTTP Error: 404, Project 'js-html-css-chatroom' or database 'Chatlogs' does not exist.","status":404}
+[info] Chatlogs does not exist in project js-html-css-chatroom.
+[debug] [2025-02-26T03:39:24.232Z] database_type: DATABASE_DOES_NOT_EXIST
+[debug] [2025-02-26T03:41:17.343Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:41:17.343Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:41:17.343Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/js-html-css-chatroom/databases/Chatlogs [none]
+[debug] [2025-02-26T03:41:17.530Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/js-html-css-chatroom/databases/Chatlogs 404
+[debug] [2025-02-26T03:41:17.530Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/js-html-css-chatroom/databases/Chatlogs {"error":{"code":404,"message":"Project 'js-html-css-chatroom' or database 'Chatlogs' does not exist.","status":"NOT_FOUND"}}
+[debug] [2025-02-26T03:41:17.530Z] error getting database type:  Request to https://firestore.googleapis.com/v1/projects/js-html-css-chatroom/databases/Chatlogs had HTTP Error: 404, Project 'js-html-css-chatroom' or database 'Chatlogs' does not exist. {"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":404,"message":"Project 'js-html-css-chatroom' or database 'Chatlogs' does not exist.","status":"NOT_FOUND"}},"response":{"statusCode":404}},"exit":1,"message":"Request to https://firestore.googleapis.com/v1/projects/js-html-css-chatroom/databases/Chatlogs had HTTP Error: 404, Project 'js-html-css-chatroom' or database 'Chatlogs' does not exist.","status":404}
+[info] Chatlogs does not exist in project js-html-css-chatroom.
+[debug] [2025-02-26T03:41:17.531Z] database_type: DATABASE_DOES_NOT_EXIST
+[debug] [2025-02-26T03:41:26.640Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:41:26.640Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:41:26.640Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/js-html-css-chatroom/databases/(default) [none]
+[debug] [2025-02-26T03:41:26.936Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/js-html-css-chatroom/databases/(default) 200
+[debug] [2025-02-26T03:41:26.936Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/js-html-css-chatroom/databases/(default) {"name":"projects/js-html-css-chatroom/databases/(default)","uid":"1d3fb075-463e-4169-a8a5-78750ac2fba1","createTime":"2025-02-26T03:40:44.570572Z","updateTime":"2025-02-26T03:40:44.570572Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2025-02-26T03:40:44.570572Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","databaseEdition":"STANDARD","etag":"ILb3gcm14IsDMMz35bS14IsD"}
+[debug] [2025-02-26T03:41:26.937Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-02-26T03:41:26.937Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-02-26T03:41:26.937Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-26T03:41:26.937Z] > authorizing via signed-in user (danenrvig@gmail.com)
+[debug] [2025-02-26T03:41:26.937Z] [iam] checking project js-html-css-chatroom for permissions ["firebase.projects.get"]
+[debug] [2025-02-26T03:41:26.938Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:41:26.938Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:41:26.938Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/js-html-css-chatroom:testIamPermissions [none]
+[debug] [2025-02-26T03:41:26.938Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/js-html-css-chatroom:testIamPermissions x-goog-quota-user=projects/js-html-css-chatroom
+[debug] [2025-02-26T03:41:26.938Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/js-html-css-chatroom:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-02-26T03:41:27.423Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/js-html-css-chatroom:testIamPermissions 200
+[debug] [2025-02-26T03:41:27.423Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/js-html-css-chatroom:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-02-26T03:41:31.334Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:41:31.334Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:41:31.334Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/js-html-css-chatroom/releases pageSize=10&pageToken=
+[debug] [2025-02-26T03:41:31.629Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/js-html-css-chatroom/releases 200
+[debug] [2025-02-26T03:41:31.629Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/js-html-css-chatroom/releases {"releases":[{"name":"projects/js-html-css-chatroom/releases/cloud.firestore","rulesetName":"projects/js-html-css-chatroom/rulesets/1f57c78d-a6a8-4abc-8146-3101f0755709","createTime":"2025-02-26T03:40:48.832227Z","updateTime":"2025-02-26T03:40:48.832227Z"}]}
+[debug] [2025-02-26T03:41:31.629Z] Found ruleset: projects/js-html-css-chatroom/rulesets/1f57c78d-a6a8-4abc-8146-3101f0755709
+[debug] [2025-02-26T03:41:31.629Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:41:31.629Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:41:31.630Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/js-html-css-chatroom/rulesets/1f57c78d-a6a8-4abc-8146-3101f0755709 [none]
+[debug] [2025-02-26T03:41:31.736Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/js-html-css-chatroom/rulesets/1f57c78d-a6a8-4abc-8146-3101f0755709 200
+[debug] [2025-02-26T03:41:31.736Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/js-html-css-chatroom/rulesets/1f57c78d-a6a8-4abc-8146-3101f0755709 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-02-26T03:41:42.033Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:41:42.033Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:41:42.033Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:41:42.033Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:41:42.033Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/js-html-css-chatroom/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2025-02-26T03:41:42.034Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/js-html-css-chatroom/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2025-02-26T03:41:42.284Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/js-html-css-chatroom/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2025-02-26T03:41:42.284Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/js-html-css-chatroom/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2025-02-26T03:41:42.730Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/js-html-css-chatroom/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2025-02-26T03:41:42.730Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/js-html-css-chatroom/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/js-html-css-chatroom/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2025-02-26T03:41:42.731Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-26T03:41:42.732Z] > authorizing via signed-in user (danenrvig@gmail.com)
+[debug] [2025-02-26T03:41:42.732Z] [iam] checking project js-html-css-chatroom for permissions ["firebase.projects.get"]
+[debug] [2025-02-26T03:41:42.732Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:41:42.732Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:41:42.732Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/js-html-css-chatroom:testIamPermissions [none]
+[debug] [2025-02-26T03:41:42.732Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/js-html-css-chatroom:testIamPermissions x-goog-quota-user=projects/js-html-css-chatroom
+[debug] [2025-02-26T03:41:42.732Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/js-html-css-chatroom:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-02-26T03:41:42.952Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/js-html-css-chatroom:testIamPermissions 200
+[debug] [2025-02-26T03:41:42.953Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/js-html-css-chatroom:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-02-26T03:41:42.953Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:41:42.953Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:41:42.953Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:41:42.953Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:41:42.953Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-02-26T03:41:42.953Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/js-html-css-chatroom
+[debug] [2025-02-26T03:41:42.955Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-02-26T03:41:42.955Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/js-html-css-chatroom
+[debug] [2025-02-26T03:41:43.209Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/runtimeconfig.googleapis.com 200
+[debug] [2025-02-26T03:41:43.209Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-02-26T03:41:43.225Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/cloudfunctions.googleapis.com 200
+[debug] [2025-02-26T03:41:43.225Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2025-02-26T03:41:43.225Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:41:43.225Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:41:43.225Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2025-02-26T03:41:43.225Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/js-html-css-chatroom
+[debug] [2025-02-26T03:41:43.648Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2025-02-26T03:41:43.648Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2025-02-26T03:41:53.650Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:41:53.650Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:41:53.650Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-02-26T03:41:53.650Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/js-html-css-chatroom
+[debug] [2025-02-26T03:41:53.912Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/cloudfunctions.googleapis.com 200
+[debug] [2025-02-26T03:41:53.912Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/js-html-css-chatroom/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] ✔  Wrote functions/package.json 
+[info] ✔  Wrote functions/index.js 
+[info] ✔  Wrote functions/.gitignore 
+[info] 
+=== Apphosting Setup
+[debug] [2025-02-26T03:42:31.638Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:42:31.638Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:42:31.638Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/js-html-css-chatroom/billingInfo [none]
+[debug] [2025-02-26T03:42:31.815Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/js-html-css-chatroom/billingInfo 200
+[debug] [2025-02-26T03:42:31.815Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/js-html-css-chatroom/billingInfo {"name":"projects/js-html-css-chatroom/billingInfo","projectId":"js-html-css-chatroom","billingAccountName":"","billingEnabled":false}
+[info] i  Writing default settings to apphosting.yaml... 
+[info] ✔  Wrote apphosting.yaml 
+[info] ✔  Create a new App Hosting backend with `firebase apphosting:backends:create` 
+[info] 
+=== Hosting Setup
+[debug] [2025-02-26T03:42:31.816Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:42:31.816Z] Checked if tokens are valid: true, expires at: 1740544275760
+[debug] [2025-02-26T03:42:31.816Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/js-html-css-chatroom [none]
+[debug] [2025-02-26T03:42:32.174Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/js-html-css-chatroom 200
+[debug] [2025-02-26T03:42:32.174Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/js-html-css-chatroom {"projectId":"js-html-css-chatroom","projectNumber":"853592266548","displayName":"JS-HTML-CSS-Chatroom","name":"projects/js-html-css-chatroom","resources":{"hostingSite":"js-html-css-chatroom"},"state":"ACTIVE","etag":"1_3b8b56f8-e18e-46b1-a7b6-ec6ce462febe"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] ✔  Wrote public/404.html 
+[debug] [2025-02-26T03:42:54.330Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2025-02-26T03:42:54.488Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2025-02-26T03:42:54.488Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.3.1","browserURL":"https://www.gstatic.com/firebasejs/11.3.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.3.1/firebase.tgz"},"live":{"version":"11.3","browserURL":"https://www.gstatic.com/firebasejs/live/11.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.3/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/11.3.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.3.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.3.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.3.1/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.3.1/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.3.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.3.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.3.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.3.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.3.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.3.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.3.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.3.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.3.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.3.1/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.3.1/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.3.1/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.3.1/firebase-firestore.memory.js"}}
+[info] ✔  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming /Users/danielvigo/VScode/Projects/PostText is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=171652742&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-02-26T03:43:21.288Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2025-02-26T03:43:21.288Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2025-02-26T03:43:21.570Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2025-02-26T03:43:21.570Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2025-02-26T03:43:21.573Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2025-02-26T03:43:21.909Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2025-02-26T03:43:21.910Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"renlifegaming","id":99051591,"node_id":"U_kgDOBedoRw","avatar_url":"https://avatars.githubusercontent.com/u/99051591?v=4","gravatar_id":"","url":"https://api.github.com/users/renlifegaming","html_url":"https://github.com/renlifegaming","followers_url":"https://api.github.com/users/renlifegaming/followers","following_url":"https://api.github.com/users/renlifegaming/following{/other_user}","gists_url":"https://api.github.com/users/renlifegaming/gists{/gist_id}","starred_url":"https://api.github.com/users/renlifegaming/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/renlifegaming/subscriptions","organizations_url":"https://api.github.com/users/renlifegaming/orgs","repos_url":"https://api.github.com/users/renlifegaming/repos","events_url":"https://api.github.com/users/renlifegaming/events{/privacy}","received_events_url":"https://api.github.com/users/renlifegaming/received_events","type":"User","user_view_type":"private","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"notification_email":null,"public_repos":0,"public_gists":0,"followers":0,"following":0,"created_at":"2022-02-04T21:42:57Z","updated_at":"2025-02-26T03:43:18Z","private_gists":0,"total_private_repos":2,"owned_private_repos":2,"disk_usage":564,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as renlifegaming 
+[info] 
